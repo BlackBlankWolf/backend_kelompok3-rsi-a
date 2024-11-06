@@ -52,12 +52,12 @@ class DataController extends Controller
             ]);
         }
 
-        $request->session()->regenerate();
+        // $request->session()->regenerate();x
 
         // if(Auth::guard('user')->user() -> role != 'user'){
         //     return redirect()->route('dashboard');
         // }
-        return redirect()->route('/dashboard'); 
+        return redirect()->route('dashboard'); 
     }
 
     public function logout(Request $request)
